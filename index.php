@@ -21,7 +21,8 @@ if(!$rezultat){
 
     echo "<h3>Misljenje br: {$broj_misljenja}</h3>";
     echo "<h4>Datum misljenja: {$datum}</h4>";
-    echo "<h4>Broj biltena: <a href='$link'>{$broj_biltena}</a></h4>";
+    echo "<h4>Broj biltena:{$broj_biltena}</h4>";
+    echo "<h4><a href='$link'>Preuzmi bilten</a></h4>";
     echo "<h4>Misljenje se odnosi na: {$zakon}</h4>";
     echo "<h4>Naslov misljenja: <strong>{$naslov_misljenja}</strong></h4>";
     echo "<h4>Tekst misljenja: </h4>";

@@ -15,7 +15,7 @@
 <body>
     <nav id="traka" class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="navbar-header"><strong><a href="/misljenja" class="navbar-brand">Misljenja MF</a></strong></div> 
+        <div class="navbar-header"><strong><a href="/mis" class="navbar-brand">Misljenja MF</a></strong></div> 
         <div class="collapse navbar-collapse pull-right"> </div>
     </div>
     </nav>

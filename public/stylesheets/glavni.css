@@ -1,9 +1,9 @@
 
 html, body{
-    height: 100%;
     background-image: linear-gradient(45deg, #ea5a6f,  #de791e, #fccf3a);
     color:whitesmoke;
     font-family: 'Varela Round', sans-serif;
+    height: 100%;
 }
 
 .thumbnail img {
@@ -114,6 +114,7 @@ nav#traka.navbar.navbar-default{
     margin-top:4px;
     color:whitesmoke;
     background-color:#88294D;
+    margin-bottom: 2%;
 
 
 }
