@@ -34,7 +34,7 @@ while($red = mysqli_fetch_array($rezultat)){
 }
 
 for($strana = 1; $strana <= $broj_strana; $strana++){
-    echo "<a class='btn btn-danger text-justify' href='paginacija.php?strana={$strana}'>{$strana}</a>";
+    echo "<a id='strana' class='btn btn-danger'  href='paginacija.php?strana={$strana}'>{$strana}</a>";
 
 }
 ?>

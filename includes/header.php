@@ -17,5 +17,9 @@
     <div class="container-fluid">
         <div class="navbar-header"><strong><a href="/mis" class="navbar-brand">Misljenja MF</a></strong></div> 
         <div class="collapse navbar-collapse pull-right"> </div>
+ <ul class="nav navbar-nav">
+        <li ><a href="/mis/pretraga.php">Pretraga <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+     </ul>
     </div>
-    </nav>
+   </nav>
