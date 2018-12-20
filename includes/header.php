@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse pull-right"> </div>
  <ul class="nav navbar-nav">
         <li ><a href="/mis/pretraga.php">Pretraga <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="/mis/unos.php">Unos</a></li>
      </ul>
     </div>
    </nav>

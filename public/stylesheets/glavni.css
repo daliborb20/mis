@@ -3,7 +3,7 @@ html, body{
     background-image: linear-gradient(45deg, #ea5a6f,  #de791e, #fccf3a);
     color:whitesmoke;
     font-family: 'Varela Round', sans-serif;
-    height:100%;
+    min-height:100%;
 }
 
 .thumbnail img {
@@ -19,7 +19,7 @@ html, body{
 #forma .imena, #forma button{
     display: block;
     margin: 0 auto;
-    width: 40%;
+    width: 60%;
     padding:7px;
     font-size: 1.2em;
     border: white solid 1px;
@@ -111,7 +111,6 @@ nav#traka.navbar.navbar-default{
     padding:7px;
     font-size: 1.2em;
     border: white solid 1px;
-    margin-top:4px;
     color:whitesmoke;
     background-color:#88294D;
     margin-bottom: 11%;
@@ -155,8 +154,8 @@ label {
     width: 50%; 
 }
 #forma2  input[type=submit]{
-    margin-bottom: 4%;
-    margin-top: 8%;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 #forma2{
     width: 100%;
