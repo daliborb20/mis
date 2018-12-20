@@ -56,15 +56,13 @@ if(isset($_POST['Pretrazi'])) {
     }
      else if ($kljucni_pojam == "" and  $broj_misljenja == "" and  $datum_misljenja != "" and $broj_biltena != ""){
         $query = "SELECT * FROM misljenja WHERE datum_misljenja LIKE '%$datum_misljenja%' AND  broj_biltena LIKE '%$broj_biltena%'";
-        echo "5";
-    }
- 
+        echo "5"; } 
      else if ($kljucni_pojam == "" and  $broj_misljenja == "" and  $datum_misljenja == "" and $broj_biltena == ""){
          echo "<h4 class='alert alert-danger'>Mорате унети минимум један критеријум за претрагу</h4>";
         echo "6";
          die;
     }
-    //=======================================================kraj petlje 
+    //=======================================================kraj  
     echo $query;
     $rezultat = mysqli_query($connection, $query);
     if(!$rezultat){
