@@ -15,11 +15,11 @@
 <body>
     <nav id="traka" class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="navbar-header"><strong><a href="/mis" class="navbar-brand">Misljenja MF</a></strong></div> 
+        <div class="navbar-header"><strong><a href="/mis" class="navbar-brand">Мишљења МФ</a></strong></div> 
         <div class="collapse navbar-collapse pull-right"> </div>
  <ul class="nav navbar-nav">
-        <li ><a href="/mis/pretraga.php">Pretraga <span class="sr-only">(current)</span></a></li>
-        <li><a href="/mis/unos.php">Unos</a></li>
+        <li ><a href="/mis/pretraga.php">Претрага <span class="sr-only">(current)</span></a></li>
+        <li><a href="/mis/unos.php">Унос</a></li>
      </ul>
     </div>
    </nav>

@@ -19,15 +19,15 @@ if(isset($_GET['broj'])){
         $zakon = $red['zakon'];
         $link = $red['link_misljenja'];
 
-        echo "<h3>Misljenje br: {$broj_misljenja}</h3>";
-        echo "<h4>Datum misljenja: {$datum}</h4>";
-        echo "<h4>Broj biltena: {$broj_biltena}</h4>";
-        echo "<h4><a href='$link'>Preuzmite bilten</a></h4>";
-        echo "<h4>Misljenje se odnosi na: {$zakon}</h4>";
-        echo "<h4>Naslov misljenja: <strong>{$naslov_misljenja}</strong></h4>";
-        echo "<h4>Tekst misljenja: </h4>";
+        echo "<h3>Мишљење broj: {$broj_misljenja}</h3>";
+        echo "<h4>Датум мишљења: {$datum}</h4>";
+        echo "<h4>Број билтена: {$broj_biltena}</h4>";
+        echo "<h4><a href='$link'>Преузмите билтен</a></h4>";
+        echo "<h4>Мишљење се односи на: {$zakon}</h4>";
+        echo "<h4>Наслов мишљења: <strong>{$naslov_misljenja}</strong></h4>";
+        echo "<h4>Текст мишљења: </h4>";
         echo "<p>{$tekst}</p>";
-        echo "<a class='btn'id='dugme2' href='index.php'>Povratak</a>";
+        echo "<a class='btn'id='dugme2' href='index.php'>Повратак</a>";
                 
         }
 
