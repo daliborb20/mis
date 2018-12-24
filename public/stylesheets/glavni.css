@@ -1,11 +1,15 @@
 
-html, body{
+html{
+    height:100%;
+}
+body{
     background-image: linear-gradient(45deg, #ea5a6f,  #de791e, #fccf3a);
     color:whitesmoke;
     font-family: 'Varela Round', sans-serif;
-    min-height:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
 }
-
 .thumbnail img {
     width: 100%; 
 }
@@ -107,7 +111,7 @@ nav#traka.navbar.navbar-default{
 #dugme2{
     display: block;
     margin: 0 auto;
-    width: 30%;
+    width: 38%;
     padding:7px;
     font-size: 1.2em;
     border: white solid 1px;
@@ -127,7 +131,7 @@ nav#traka.navbar.navbar-default{
     text-decoration: none;
 }
 
-.container {
+.container, .jumbotron {
     background-color: #88294d;
     margin-bottom: 1%;
 }
@@ -160,6 +164,18 @@ label {
 #forma2{
     width: 100%;
 }
-#rezultati{
-    
+#naslov {
+    text-transform: uppercase;
 }
+#container__zakoni   {
+    border: 1px whitesmoke solid;
+    text-align:center;
+   
+}
+
+a>div[id=container__zakoni]{
+    color:whitesmoke;
+    padding: 1%;
+    height:4em;
+}
+

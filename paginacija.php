@@ -24,9 +24,9 @@ if(!isset($_GET['strana'])){
 }
 
 $pocetni_broj = ($strana - 1)*$rezultata_po_strani;
-
 $query = "SELECT * FROM misljenja LIMIT $pocetni_broj,$rezultata_po_strani";
 $rezultat =mysqli_query($connection, $query);
+
 while($red = mysqli_fetch_array($rezultat)){
     echo $red['rbr_misljenja'];
     echo "<h3>{$red['naslov_misljenja']}</h4>";
