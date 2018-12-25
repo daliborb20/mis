@@ -2,7 +2,7 @@
 <?php include "db.php" ?>
 <?php include "controler/funkcije.php" ?>
 <div class="container" id="container__forma">
-    <form id="forma2"  method="POST">
+    <form id="forma2"   method="GET">
         <label class="col-md-12 col-xs-12"for="pojam" >Претрага по кључном појму</label>
         <input name="pojam" class="imena2 col-md-12 col-xs-12" id="pojam" type="text" placeholder="Кључни појам">
 
@@ -25,6 +25,7 @@
 <?php
 //=======================pocetak pretrage
 pretraga();
+paginacija();
 ?>
 </div>
 
