@@ -5,6 +5,7 @@
 if(isset($_GET['broj'])){
     $rbr = htmlspecialchars($_GET['broj']);
     $query = "SELECT * FROM misljenja WHERE rbr_misljenja = $rbr";
+    mysqli_query($connection, "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'");
     $rezultat = mysqli_query($connection, $query);
 
     if(!$rezultat){

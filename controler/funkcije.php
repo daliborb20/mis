@@ -61,6 +61,7 @@ function paginacija() {
     $query = $_SESSION['query'];
 
     $rezultata_po_strani = 9;
+    mysqli_query($connection, "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'");
 
    
     //===============paginacija kraj
