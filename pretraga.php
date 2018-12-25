@@ -19,7 +19,6 @@
     </form>
 </div>
 
-<div class="container" id="rezultati">
 
 
 <?php

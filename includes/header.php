@@ -6,7 +6,9 @@
 
     <script src="./public/stylesheets/jq_min.js"></script>
     <script src="./public/stylesheets/bootstrap.min.js"></script>
+    <script src="./public/stylesheets/aos.js"></script>
 
+    <link href="./public/stylesheets/aos.css" rel="stylesheet">
     <link href="./public/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./public/stylesheets/glavni.css">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round " rel="stylesheet">
