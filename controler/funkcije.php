@@ -1,5 +1,9 @@
 <?php
-function pretraga() {
+
+
+class Misljenja {
+
+public static function pretraga() {
   global $connection;
   global $query;
   session_start();
@@ -50,7 +54,7 @@ function pretraga() {
 
  } 
 }
-function paginacija() {
+public static function paginacija() {
     global $connection;
     global $query;
     
@@ -90,7 +94,7 @@ function paginacija() {
             echo "<h4>Број Мишљења:<u>{$red['broj_misljenja']}</u></h4>";
             echo "<h4>{$red['naslov_misljenja']}</h4>";
             echo "<p>{$tekst_misljenja_prikaz}</p>";
-            echo "<a class='btn' href='pojedinacno.php?broj={$red['rbr_misljenja']}' id='dugme2'>Прикажи више информација</a>"; 
+            echo "<a class='btn' href='pojedinacno.php?rbr={$red['rbr_misljenja']}' id='dugme2'>Прикажи више информација</a>"; 
             echo "</div>";
             echo "<hr>";
         }
@@ -103,7 +107,7 @@ function paginacija() {
 }
     
 }
-function selektorZakona()
+public static function selektorZakona()
 {
 
     global $connection;
@@ -127,7 +131,7 @@ function selektorZakona()
                     echo "<h4>Број Мишљења:<u>{$red['broj_misljenja']}</u></h4>";
                     echo "<h4>{$red['naslov_misljenja']}</h4>";
                     echo "<p>{$tekst_misljenja_prikaz}</p>";
-                    echo "<a class='btn' href='pojedinacno.php?broj={$red['rbr_misljenja']}' id='dugme2'>Прикажи више информација</a>"; 
+                    echo "<a class='btn' href='pojedinacno.php?rbr={$red['rbr_misljenja']}' id='dugme2'>Прикажи више информација</a>"; 
                     echo "</div>";
                     echo "<hr>";
          
@@ -138,8 +142,76 @@ function selektorZakona()
     }
 }
         
-                
+public static function posaljiMejl(){
+    require "mail/Exception.php";
+    require "mail/PHPMailer.php";
+    require "mail/SMTP.php";
+    global $connection;
 
+    if(isset($_GET['mejl'])){
+        $rbr = htmlspecialchars($_GET['broj']);
+        $email = htmlspecialchars($_GET['mejl']);
+        mysqli_query($connection, "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'");
+
+        $query = "SELECT * FROM misljenja where rbr_misljenja = $rbr";
+        $rezultat = mysqli_query($connection, $query);
+        if(!$rezultat){
+            echo "<div class='alert alert-danger'>Neuspesno citanje iz baze podataka</div>";
+        }
+        else {
+            foreach($rezultat as $red){
+
+                $tekst = $red['tekst_misljenja'];
+                $broj = $red['broj_misljenja'];
+
+                $mail = new PHPMailer\PHPMailer\PHPMailer();                              // Passing `true` enables exceptions
+                try {
+                //Server settings
+                $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+                $mail->isSMTP();                                      // Set mailer to use SMTP
+                $mail->Host = 'mail.sarena-laza.in.rs';  // Specify main and backup SMTP servers
+                $mail->SMTPAuth = true;                               // Enable SMTP authentication
+                $mail->Username = 'mis@sarena-laza.in.rs';                 // SMTP username
+                $mail->Password = 'sarenala_misljenja';                           // SMTP password
+                $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+                $mail->Port = 465;                                    // TCP port to connect to
+
+                //Recipients
+                $mail->setFrom('mis@sarena-laza.in.rs', 'Misljenje');
+                $mail->addAddress($email, 'Joe User');     // Add a recipient
+                //$mail->addAddress('ellen@example.com');               // Name is optional
+                //$mail->addReplyTo('info@example.com', 'Information');
+                //$mail->addCC('cc@example.com');
+                //$mail->addBCC('bcc@example.com');
+
+                //Attachments
+                //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+                //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+
+                //Content
+                $mail->isHTML(true);                                  // Set email format to HTML
+                $mail->Subject = "Misljenje MF " . $broj; 
+                $mail->Body = $tekst;
+
+                $mail->send();
+                echo "<div>";
+                echo "<h5 class='alert alert-success'>Poruka uspesno poslata</h5>";
+                echo "<a class='btn' id='dugme2' href='index.php'>Врати се назад</a>";
+                echo "</div>";
+                } catch (Exception $e) {
+                echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+                }
     
+                }
+    
+
+        }
+
+
+   }
+
+}                
+
+}    
 
 ?>

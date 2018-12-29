@@ -178,4 +178,41 @@ a>div[id=container__zakoni]{
     padding: 1%;
     height:4em;
 }
-
+#dugme3{
+   display: block;
+    width: 38%;
+    padding:7px;
+    font-size: 1.2em;
+    border: white solid 1px;
+    color:whitesmoke;
+    background-color:#88294D;
+    margin-bottom: 2%;
+}
+#dugme3:hover{
+    background-color: #E7625A;
+}
+#mejl__forma {
+    display: block;
+    width: 38%;
+    padding:7px;
+    font-size: 1.2em;
+    border: white solid 1px;
+    color:whitesmoke;
+    background-color:#88294D;
+    margin-bottom: 2%;
+    border:solid 1px whitesmoke;
+    text-align:center;
+}
+#forma__skirvena{
+    text-align:center;
+    display:none; 
+}
+#link__sakrij{
+    text-decoration: none;
+    color:whitesmoke;
+}
+#link__sakrij:hover{
+    background-color:#e0742a;
+    cursor:pointer;
+   
+}

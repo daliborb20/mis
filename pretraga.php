@@ -23,8 +23,8 @@
 
 <?php
 //=======================pocetak pretrage
-pretraga();
-paginacija();
+Misljenja::pretraga();
+Misljenja::paginacija();
 ?>
 </div>
 

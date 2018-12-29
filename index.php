@@ -34,5 +34,5 @@
 
 </div>
 </div>
-<?php selektorZakona();?>
+<?php Misljenja::selektorZakona();?>
  <?php include "includes/footer.php" ?>
