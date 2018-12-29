@@ -203,16 +203,23 @@ a>div[id=container__zakoni]{
     border:solid 1px whitesmoke;
     text-align:center;
 }
-#forma__skirvena{
+#forma__skrivena{
     text-align:center;
     display:none; 
 }
 #link__sakrij{
     text-decoration: none;
     color:whitesmoke;
+    background-color:#e0742a;
 }
 #link__sakrij:hover{
-    background-color:#e0742a;
     cursor:pointer;
    
 }
+
+#preuzmi_misljenje{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color:#e0742a;
+}
+

@@ -6,18 +6,14 @@
 </footer>
 <script>
 AOS.init();
-function sakrij(){
-    var forma = document.getElementById("forma__skirvena");
-    if(forma.style.display === "none"){
-        forma.style.display = "block";
-
+$("#link__sakrij").click(function(){
+    if($("#forma__skrivena").css("display") == "none"){
+        $("#forma__skrivena").css("display", "block")
     } else {
-        forma.style.display = "none";
+        $("#forma__skrivena").css("display", "none")
     }
-}
 
-
-
+})
 </script>
 </body>
 </html>

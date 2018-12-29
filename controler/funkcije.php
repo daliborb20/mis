@@ -118,6 +118,7 @@ public static function selektorZakona()
         if(in_array($_GET['zakon'], $pojmovi)){
             $pojam = htmlspecialchars($_GET['zakon']);
             $query = "SELECT * FROM misljenja WHERE zakon like '%$pojam%' ORDER BY rbr_misljenja DESC LIMIT 100";
+            mysqli_query($connection, "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'");
             $rezultat = mysqli_query($connection, $query);
 
             if(!$rezultat){

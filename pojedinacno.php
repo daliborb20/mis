@@ -26,11 +26,11 @@ if(isset($_GET['rbr'])){
             echo "<h3>Мишљење broj: {$broj_misljenja}</h3>";
             echo "<h4>Датум мишљења: {$datum}</h4>";
             echo "<h4>Број билтена: {$broj_biltena}</h4>";
-            echo "<h4><a id='link__sakrij' href='$link'>Преузмите билтен</a></h4>";
+            echo "<h4><a id='preuzmi_misljenje' href='$link'>Преузмите билтен</a></h4>";
 
 
-            echo "<h4><a href='#' id='link__sakrij' onclick='sakrij()'>Пошаљи мишљење на мејл</a></h4>";
-            echo "<div id='forma__skirvena'>";
+            echo "<h4><a id='link__sakrij' >Пошаљи мишљење на мејл</a></h4>";
+            echo "<div id='forma__skrivena'>";
             echo "<form method='GET'>";
             echo "<input id='mejl__forma'placeholder='Унесите мејл адресу' type='email' name='mejl'>";
             echo "<input type='hidden' name='broj' value='{$rbr}'>";
