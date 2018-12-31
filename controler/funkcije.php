@@ -177,10 +177,9 @@ class Misljenja
                         $mail->Body = $tekst;
 
                         $mail->send();
-                        echo '<div>';
-                        echo "<h5 class='alert alert-success'>Poruka uspesno poslata</h5>";
-                        echo "<a class='btn' id='dugme2' href='index.php'>Врати се назад</a>";
-                        echo '</div>';
+                        echo "<h4 class='alert text-center'>Порука успешно послата!!</h4>";
+                        echo "<h4 class='text-center'>Враћамо Вас на претходну страницу...</h4>";
+                        header("refresh:2; url=pojedinacno.php?rbr={$rbr}");
                     } catch (Exception $e) {
                         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
                     }
@@ -238,7 +237,6 @@ class Misljenja
     public static function unesiNovoMisljenje()
     {
         global $connection;
-        echo 'HHHHHHHHHHHHHHHHHHHHHHHHHh';
         if (isset($_POST['posalji'])) {
             $broj_misljenja = htmlspecialchars($_POST['broj_misljenja']);
             $broj_biltena = htmlspecialchars($_POST['broj_biltena']);
@@ -255,6 +253,7 @@ class Misljenja
                 echo "<div class='alert alert-danger'>Upis u bazu nije moguc</div> ".mysqli_error($connection);
             } else {
                 echo "<div class='alert alert-success'>Uspesno upisano u bazu</div> ";
+
             }
         }
     }

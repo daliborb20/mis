@@ -4,10 +4,8 @@
 
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-xs-offset-1" id="naslov">
-<div>
-    <h2 class="text-center"> Мишљења Министарства финансија </h2>
-</div>
 
+    <h2 class="text-center"> Мишљења Министарства финансија </h2>
     <a href="index.php?zakon=ПДВ">
         <div id="container__zakoni" class="container col-md-4 col-xs-5">Порез на додату вредност</div>
     </a>
