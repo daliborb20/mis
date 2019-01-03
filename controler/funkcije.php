@@ -1,9 +1,7 @@
 <?php
 
 
-class Misljenja
-{
-    public static function pretraga()
+   function pretraga()
     {
         global $connection;
         global $query;
@@ -46,7 +44,7 @@ class Misljenja
         }
     }
 
-    public static function paginacija()
+   function paginacija()
     {
         global $connection;
         global $query;
@@ -95,7 +93,7 @@ class Misljenja
         }
     }
 
-    public static function selektorZakona()
+   function poslednjihSto()
     {
         global $connection;
         $pojmovi = array('ПДВ', 'добит', 'доходак', 'фискалним', 'акцизама', 'рачуноводству');
@@ -127,7 +125,7 @@ class Misljenja
         }
     }
 
-    public static function posaljiMejl()
+   function posaljiMejl()
     {
         require 'mail/Exception.php';
         require 'mail/PHPMailer.php';
@@ -162,14 +160,6 @@ class Misljenja
                 //Recipients
                         $mail->setFrom('mis@sarena-laza.in.rs', 'Misljenje');
                         $mail->addAddress($email, 'Joe User');     // Add a recipient
-                        //$mail->addAddress('ellen@example.com');               // Name is optional
-                        //$mail->addReplyTo('info@example.com', 'Information');
-                        //$mail->addCC('cc@example.com');
-                        //$mail->addBCC('bcc@example.com');
-
-                        //Attachments
-                        //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-                        //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
                         //Content
                 $mail->isHTML(true);                                  // Set email format to HTML
@@ -188,7 +178,7 @@ class Misljenja
         }
     }
 
-    public static function pojedinacno()
+   function pojedinacno()
     {
         global $connection;
         if (isset($_GET['rbr'])) {
@@ -210,7 +200,7 @@ class Misljenja
                     $link = $red['link_misljenja'];
                     $rbr = $red['rbr_misljenja'];
 
-                    echo "<h3>Мишљење broj: {$broj_misljenja}</h3>";
+                    echo "<h4>Мишљење број: {$broj_misljenja}</h4>";
                     echo "<h4>Датум мишљења: {$datum}</h4>";
                     echo "<h4>Број билтена: {$broj_biltena}</h4>";
                     echo "<h4><a id='preuzmi_misljenje' href='$link'>Преузмите билтен</a></h4>";
@@ -234,7 +224,7 @@ class Misljenja
         }
     }
 
-    public static function unesiNovoMisljenje()
+    function unesiNovoMisljenje()
     {
         global $connection;
         if (isset($_POST['posalji'])) {
@@ -257,4 +247,4 @@ class Misljenja
             }
         }
     }
-}
+

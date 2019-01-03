@@ -4,9 +4,9 @@
 
 <div class="container">
 <?php
-Misljenja::pojedinacno();
+pojedinacno();
 ?>
-<?php Misljenja::posaljiMejl() ?>
+<?php posaljiMejl() ?>
 
 </div>
 

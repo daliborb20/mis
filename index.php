@@ -6,6 +6,7 @@
 <div class="col-md-8 col-md-offset-2 col-xs-offset-1" id="naslov">
 
     <h2 class="text-center"> Мишљења Министарства финансија </h2>
+    <h3 class="text-center"> >>Последњих 100<< </h3>
     <a href="index.php?zakon=ПДВ">
         <div id="container__zakoni" class="container col-md-4 col-xs-5">Порез на додату вредност</div>
     </a>
@@ -32,5 +33,5 @@
 
 </div>
 </div>
-<?php Misljenja::selektorZakona();?>
- <?php include "includes/footer.php" ?>
+<?php poslednjihSto();?>
+<?php include "includes/footer.php" ?>
