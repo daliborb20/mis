@@ -1,6 +1,6 @@
 <?php include "includes/header.php" ?>
-<?php include "controler/db.php" ?>
-<?php include "controler/funkcije.php" ?>
+<?php include "includes/db.php" ?>
+<?php include "includes/funkcije.php" ?>
 
 <div class="container">
 <?php
