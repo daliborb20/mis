@@ -1,6 +1,6 @@
 <?php include "includes/header.php" ?>
-<?php include "db.php"; ?>
-<?php include "controler/funkcije.php"; ?>
+<?php include "includes/db.php"; ?>
+<?php include "includes/funkcije.php"; ?>
 
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-xs-offset-1" id="naslov">

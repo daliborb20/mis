@@ -82,7 +82,7 @@
                     echo "<h4>Број Мишљења:<u>{$red['broj_misljenja']}</u></h4>";
                     echo "<h4>{$red['naslov_misljenja']}</h4>";
                     echo "<p>{$tekst_misljenja_prikaz}</p>";
-                    echo "<a class='btn' href='pojedinacno.php?rbr={$red['rbr_misljenja']}' id='dugme2'>Прикажи више информација</a>";
+                    echo "<a class='btn' href='prikaz/pojedinacno.php?rbr={$red['rbr_misljenja']}' id='dugme2'>Прикажи више информација</a>";
                     echo '</div>';
                     echo '<hr>';
                 }
@@ -116,7 +116,7 @@
                         echo "<h4>Број Мишљења:<u>{$red['broj_misljenja']}</u></h4>";
                         echo "<h4>{$red['naslov_misljenja']}</h4>";
                         echo "<p>{$tekst_misljenja_prikaz}</p>";
-                        echo "<a class='btn' href='pojedinacno.php?rbr={$red['rbr_misljenja']}' id='dugme2'>Прикажи више информација</a>";
+                        echo "<a class='btn' href='prikaz/pojedinacno.php?rbr={$red['rbr_misljenja']}' id='dugme2'>Прикажи више информација</a>";
                         echo '</div>';
                         echo '<hr>';
                     }

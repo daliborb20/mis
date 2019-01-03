@@ -1,6 +1,6 @@
 <?php include "includes/header.php" ?>
-<?php include "db.php" ?>
-<?php include "controler/funkcije.php" ?>
+<?php include "includes/db.php" ?>
+<?php include "includes/funkcije.php" ?>
 <div class="container" id="container__forma">
     <form id="forma2"   method="GET">
         <label class="col-md-12 col-xs-12"for="pojam" >Претрага по кључном појму</label>

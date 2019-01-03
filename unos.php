@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
-<?php include 'db.php'; ?>
-<?php include 'controler/funkcije.php'; ?>
+<?php include 'incluedes/db.php'; ?>
+<?php include 'includes/funkcije.php'; ?>
 
 <div class="container">
 <form id="forma"  method="POST" class="form-group">
@@ -22,6 +22,6 @@
 
 <?php
 //-------------------------------unos novih misljenja----------------
-Misljenja::unesiNovoMisljenje();
+unesiNovoMisljenje();
 ?>
 <?php include 'includes/footer.php'; ?>
